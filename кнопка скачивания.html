@@ -9,12 +9,12 @@
 
 		<script>
 			document.getElementById('downloadBtn').addEventListener('click', function() {
-				// Создаём ссылку
 				const link = document.createElement('a');
-				link.href = 'main.exe'; // путь к файлу
-				link.download = 'main.exe'; // имя, под которым файл сохранится
+				// Прямая ссылка на загрузку
+				link.href = 'https://drive.google.com/uc?export=download&id=11mcBBA6ZBTuxmyeA5v0SDKyLDkCUb4_O';
+				link.download = 'main.exe';
 				document.body.appendChild(link);
-				link.click(); // имитация клика
+				link.click();
 				document.body.removeChild(link);
 			});
 		</script>
